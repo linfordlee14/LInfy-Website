@@ -58,24 +58,14 @@ logo.png & profile-image.jpg – Image assets.
 
 README.md – This interactive file!
 
-Getting Started
-Ready to explore the website locally? Follow these steps:
 
-Clone the Repository:
-Open your terminal and run:
+## Getting Started
 
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/repository-name.git
-Navigate to the Project Directory:
+Follow these simple steps to get the website up and running locally:
 
-bash
-Copy
-Edit
-cd repository-name
-Open the Website:
-Open the index.html file in your web browser. You can do this directly from your file explorer or by running a local server (e.g., using the Live Server extension for VS Code).
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/yourusername/repository-name.git
 
 Explore:
 Use the navigation menu on the website to move between pages like Services, Pricing, About, and Contact.
