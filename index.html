@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linfy Tech Solutions - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #d3d3d3, #a9a9a9, #808080, #696969);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center the entire header content */
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        header .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        header .company-name {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center; /* Center the navigation links */
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        main h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        main p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        section ul {
+            list-style: disc;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+            color: white;
+            font-size: 1.5em;
+        }
+
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #030303; /* Complementing green color */
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            font-size: 0.9em;
+        }
+
+        footer .social-media {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div style="text-align: center; margin-bottom: 20px;">
+            <h1 style="font-size: 2.5em; color: #333; margin-bottom: 15px;">Welcome</h1>
+            <img src="logo.png" alt="Linfy Tech Solutions Logo" style="width: 250px; height: auto; border-radius: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">
+        </div>
+        <p>Your partner in innovative tech solutions.</p>
+        <button onclick="location.href='portfolio.html'" style="background-color: #4CAF50; color: white; padding: 15px 30px; font-size: 1.2em; border: none; border-radius: 5px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); transition: transform 0.2s;">
+            My Portfolio
+        </button>
+        <section>
+            <h2>Our Mission</h2>
+            <p>At Linfy Tech Solutions, we aim to deliver cutting-edge technology solutions that empower businesses to thrive in the digital age.</p>
+        </section>
+        <section>
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Expert team with years of experience</li>
+                <li>Customized solutions tailored to your needs</li>
+                <li>Commitment to excellence and innovation</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=100084779703710" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/linfordlee14/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="linfordlee14@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/linfordlee14" class="social-icon"><i class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; 2025 Linfy Tech Solutions. All rights reserved.</p>
+    </footer>
+    <button id="back-to-top" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

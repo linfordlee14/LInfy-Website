@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linfy Tech Solutions - Pricing</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Navigation bar styling */
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(90deg, #333, #555);
+            padding: 10px 20px;
+        }
+        header nav .logo {
+            display: flex;
+            align-items: center;
+        }
+        header nav .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        header nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        header nav ul li {
+            margin: 0 10px;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Footer styling */
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        footer #back-to-top {
+            position: fixed; /* Ensure visibility by keeping it fixed */
+            bottom: 20px;
+            right: 20px;
+            background: #444; /* Darker background for better contrast */
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 50%; /* Make it circular */
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+            z-index: 1000; /* Ensure it stays above other elements */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            font-size: 20px; /* Increase icon size */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        footer #back-to-top:hover {
+            background: #666; /* Slightly lighter on hover */
+            transform: scale(1.1); /* Add a hover effect */
+        }
+
+        footer .copyright {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        /* Gray Background Animation */
+        body {
+            background: linear-gradient(120deg, #d3d3d3, #b0b0b0, #a0a0a0, #c0c0c0);
+            background-size: 400% 400%;
+            animation: grayBackgroundAnimation 8s infinite alternate;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        @keyframes grayBackgroundAnimation {
+            0% { background-position: 0% 50%; }
+            25% { background-position: 50% 50%; }
+            50% { background-position: 100% 50%; }
+            75% { background-position: 50% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Main content styling */
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        main h1 {
+            text-align: center;
+            color: #333;
+        }
+        main p {
+            text-align: center;
+            color: #555;
+        }
+        .pricing-plan {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+        .pricing-plan h2 {
+            color: #444;
+        }
+        .pricing-plan ul {
+            list-style: none;
+            padding: 0;
+        }
+        .pricing-plan ul li {
+            margin: 5px 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Linfy Tech Solutions Logo">
+                <span style="color: white; font-size: 20px; font-weight: bold;">Linfy Tech Solutions</span>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Pricing Plans</h1>
+        <p>At Linfy Tech Solutions, we offer a variety of pricing plans to suit your needs. Below are our current packages:</p>
+        
+        <section class="pricing-plan">
+            <h2>Basic Repairs</h2>
+            <ul>
+                <li>Screen Repairs</li>
+                <li>Software Updates</li>
+                <li>Minor Issues</li>
+                <li>Price: From R350</li>
+            </ul>
+        </section>
+
+        <section class="pricing-plan">
+            <h2>Advanced Repairs</h2>
+            <ul>
+                <li>Hardware Replacement</li>
+                <li>Data Recovery</li>
+                <li>Complex Fixes</li>
+                <li>From R750</li>
+            </ul>
+        </section>
+
+        <section class="pricing-plan">
+            <h2>Business Support</h2>
+            <ul>
+                <li>IT Support</li>
+                <li>Network Setup</li>
+                <li>Maintenance for small businesses</li>
+                <li>Price: From R1500/month</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <button id="back-to-top" aria-label="Back to Top">&#8679;</button> <!-- Unicode arrow icon -->
+        <div class="copyright">
+            &copy; 2025 Linfy Tech Solutions. All rights reserved.
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        // Smooth scroll to top functionality
+        document.getElementById('back-to-top').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Ensure visibility of the button when scrolling
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                backToTopButton.style.display = 'flex'; // Show button after scrolling
+            } else {
+                backToTopButton.style.display = 'none'; // Hide button at the top
+            }
+        });
+    </script>
+</body>
+</html>

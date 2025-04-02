@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linfy Tech Solutions - Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Gray animated background */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(45deg, #d3d3d3, #a9a9a9, #808080, #696969, #a9a9a9, #d3d3d3);
+            background-size: 300% 300%;
+            animation: grayGradient 10s ease infinite;
+            color: #333;
+        }
+
+        @keyframes grayGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Navigation bar styling */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #ff9a9e;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        .logo-container span {
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        /* Main content styling */
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        main h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        section ul li {
+            font-size: 1.1em;
+            margin: 5px 0;
+            color: #666;
+        }
+
+        blockquote {
+            font-style: italic;
+            color: #555;
+            margin: 20px auto;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            border-left: 5px solid #ff9a9e;
+            border-radius: 5px;
+            max-width: 600px;
+        }
+
+        /* Back to Top button styling */
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.5em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+
+        #back-to-top:hover {
+            background-color: #ff9a9e;
+        }
+
+        /* Remove social media styling */
+        footer .social-media {
+            display: none;
+        }
+
+        /* Footer copyright styling */
+        footer .copyright {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Linfy Tech Solutions Logo">
+            <span>Linfy Tech Solutions</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Our Services</h1>
+        <section>
+            <h2>Device Repairs</h2>
+            <p>We offer professional repair services for a wide range of devices, including laptops, desktops, and mobile phones. Our team ensures quick and reliable fixes to get your devices back in working order.</p>
+            <h3>Benefits:</h3>
+            <ul>
+                <li>Fast and efficient repair services</li>
+                <li>High-quality replacement parts</li>
+                <li>Affordable pricing</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Data Backup & Recovery</h2>
+            <p>Protect your valuable data with our backup and recovery solutions. We help you safeguard your information and recover it quickly in case of accidental loss or system failure.</p>
+            <h3>Benefits:</h3>
+            <ul>
+                <li>Secure and reliable data backup</li>
+                <li>Quick recovery of lost files</li>
+                <li>Peace of mind for your business</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Eco-Friendly Solutions</h2>
+            <p>Our eco-friendly IT solutions are designed to reduce your carbon footprint while maintaining efficiency. We provide sustainable practices and energy-efficient technologies for your business.</p>
+            <h3>Benefits:</h3>
+            <ul>
+                <li>Environmentally conscious IT practices</li>
+                <li>Energy-efficient hardware and software</li>
+                <li>Cost savings through sustainability</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Business IT Support</h2>
+            <p>We provide comprehensive IT support services to ensure your business runs smoothly. From troubleshooting to system maintenance, our team is here to assist you every step of the way.</p>
+            <h3>Benefits:</h3>
+            <ul>
+                <li>24/7 technical support</li>
+                <li>Proactive system monitoring</li>
+                <li>Minimized downtime and disruptions</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Testimonials</h2>
+            <blockquote>
+                <p>"Linfy Tech Solutions transformed our business with their innovative solutions!" - Client A</p>
+            </blockquote>
+            <blockquote>
+                <p>"Their consulting services helped us streamline our processes and save costs." - Client B</p>
+            </blockquote>
+        </section>
+    </main>
+    <footer>
+        <div class="copyright">
+            &copy; 2025 Linfy Tech Solutions. All rights reserved.
+        </div>
+        <button id="back-to-top">&#8679;</button>
+    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        // Smooth scroll to top functionality
+        document.getElementById('back-to-top').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
