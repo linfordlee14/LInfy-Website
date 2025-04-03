@@ -144,9 +144,9 @@ Distributed under the MIT License. See `LICENSE.txt` (or add one if missing) for
 
 ## Contact
 
-Linfy Tech Solutions - [your-email@example.com](linfordlee14@gmail.com) - (Replace with actual contact)
+Linfy Tech Solutions - [Email at](linfordlee14@gmail.com) - 
 
-Project Link: [https://github.com/yourusername/repository-name](https://github.com/linfordlee14/LInfy-Website) (Replace with actual link)
+Project Link:[My Github Project](https://github.com/linfordlee14/LInfy-Website) 
 
 ## Contributors
 
