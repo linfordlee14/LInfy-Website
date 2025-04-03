@@ -1,188 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linfy Tech Solutions - Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome CSS (Required for feature/social icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Global Styles -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(45deg, #d3d3d3, #a9a9a9, #808080, #696969);
-            background-size: 400% 400%;
-            animation: gradientBG 10s ease infinite;
-        }
-
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: center; /* Center the entire header content */
-            padding: 10px 20px;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: white;
-        }
-
-        header .logo-container {
-            display: flex;
-            align-items: center;
-        }
-
-        header img {
-            height: 50px;
-            margin-right: 10px;
-        }
-
-        header .company-name {
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center; /* Center the navigation links */
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
-
-        main {
-            padding: 20px;
-            color: #333;
-            text-align: center;
-        }
-
-        main h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        main p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-        }
-
-        section {
-            margin: 20px 0;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        section h2 {
-            font-size: 1.8em;
-            margin-bottom: 15px;
-        }
-
-        section ul {
-            list-style: disc;
-            padding-left: 20px;
-            text-align: left;
-        }
-
-        .social-media a {
-            margin: 0 10px;
-            color: white;
-            font-size: 1.5em;
-        }
-
-        #back-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #030303; /* Complementing green color */
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            font-size: 1.5em;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: white;
-            font-size: 0.9em;
-        }
-
-        footer .social-media {
-            margin-bottom: 5px;
-        }
-    </style>
+    <!-- Preconnect/Preload hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <div class="app-container">
+        <div class="scroll-indicator"></div>
+
+        <!-- Site Header (Standard) -->
+        <header class="site-header">
+            <div class="header-container container-fluid px-lg-5 px-3">
+                 <a href="index.html" class="brand">
+                     <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.5 12.71L12 16.14l-3.5 1.57.98-4.11L6 10.12l4.11-.36L12 6l1.89 3.76L18 10.12l-3.48 2.48.98 4.11z"/></svg>
+                    <span>Linfy Tech</span>
+                </a>
+                 <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebarNav">
+                    <span class="icon-line line-1"></span>
+                    <span class="icon-line line-2"></span>
+                    <span class="icon-line line-3"></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Sidebar Navigation (Standard) -->
+        <nav class="sidebar" id="sidebarNav">
+             <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+<li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
+            <div class="theme-switch-container">
+                <span class="theme-switch-label">Appearance</span>
+                 <div class="theme-switch" role="switch" aria-checked="false" tabindex="0" aria-label="Toggle dark mode">
+                    <span class="icon" aria-hidden="true">☀️</span>
+                    <span class="icon" aria-hidden="true">🌙</span>
+                </div>
+            </div>
         </nav>
-    </header>
-    <main>
-        <div style="text-align: center; margin-bottom: 20px;">
-            <h1 style="font-size: 2.5em; color: #333; margin-bottom: 15px;">Welcome</h1>
-            <img src="logo.png" alt="Linfy Tech Solutions Logo" style="width: 250px; height: auto; border-radius: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">
-        </div>
-        <p>Your partner in innovative tech solutions.</p>
-        <button onclick="location.href='portfolio.html'" style="background-color: #4CAF50; color: white; padding: 15px 30px; font-size: 1.2em; border: none; border-radius: 5px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); transition: transform 0.2s;">
-            My Portfolio
+        <!-- Sidebar Overlay (Standard) -->
+        <div class="sidebar-overlay"></div>
+
+        <!-- Main Content Area -->
+        <main class="main-container flex-grow-1">
+
+             <!-- Hero Section: NOW with Parallax Background -->
+             <!-- Added hero-parallax-bg class -->
+             <!-- Removed inline text-center, handled by CSS flex centering -->
+             <!-- Removed page-section class, full height handled by specific CSS -->
+            <section class="hero-section hero-parallax-bg">
+                <!-- Content container remains for centering text -->
+                <div class="hero-content text-center">
+                    <h1 class="hero-title mb-3">Innovate. Integrate. Inspire.</h1>
+                    <p class="hero-subtitle mb-4">
+                        Linfy Tech Solutions crafts bespoke technology experiences, empowering your vision in the digital landscape.
+                    </p>
+                    <!-- IMG tag removed -->
+                    <a href="services.html" class="cta-btn">
+                       Explore Our Services
+                   </a>
+                </div>
+            </section>
+
+            <!-- Standard Content Wrapper STARTS HERE -->
+            <div class="content-wrapper container-xl">
+
+                <!-- Mission Section -->
+                <section class="page-section mission-section">
+                    <div class="section-heading">
+                        <h2>Our Mission</h2>
+                    </div>
+                     <div class="page-header-card text-center">
+                         <p class="intro-text mb-0">
+                            To deliver cutting-edge, reliable, and user-centric technology solutions that drive growth, enhance efficiency, and empower businesses and individuals to achieve their full potential in an ever-evolving digital world. We are committed to sustainability and ethical practices in all our endeavors.
+                         </p>
+                    </div>
+                </section>
+
+                <!-- Why Choose Us Section -->
+                <section class="page-section why-choose-us-section">
+                    <div class="section-heading">
+                        <h2>Why Partner With Us?</h2>
+                        <p>Discover the advantages of choosing Linfy Tech for your technology needs.</p>
+                    </div>
+                    <div class="row g-xl-4 g-lg-4 g-md-4 g-4 justify-content-center">
+                        <!-- Feature Cards -->
+                        <div class="col-md-6 col-lg-4 d-flex">
+                            <div class="feature-card">
+                                <i class="fa-solid fa-users-gear feature-icon"></i>
+                                <h3>Expert Team</h3>
+                                <p>Leverage the knowledge of our seasoned professionals, dedicated to finding the best solutions for your unique challenges.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 d-flex">
+                            <div class="feature-card">
+                                 <i class="fa-solid fa-drafting-compass feature-icon"></i>
+                                <h3>Tailored Solutions</h3>
+                                <p>We don't believe in one-size-fits-all. Receive customized strategies and services designed specifically for your goals.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 d-flex">
+                            <div class="feature-card">
+                                 <i class="fa-solid fa-headset feature-icon"></i>
+                                <h3>Dedicated Support</h3>
+                                <p>Our commitment extends beyond delivery. Count on us for reliable, ongoing support and maintenance.</p>
+                            </div>
+                        </div>
+                         <div class="col-md-6 col-lg-4 d-flex">
+                            <div class="feature-card">
+                                 <i class="fa-solid fa-lightbulb feature-icon"></i>
+                                <h3>Innovative Approach</h3>
+                                <p>We stay ahead of the curve, incorporating the latest technologies and methodologies to ensure future-proof solutions.</p>
+                            </div>
+                        </div>
+                         <div class="col-md-6 col-lg-4 d-flex">
+                            <div class="feature-card">
+                                  <i class="fa-solid fa-shield-halved feature-icon"></i>
+                                <h3>Reliability & Trust</h3>
+                                 <p>Build on a foundation of trust with transparent communication and dependable service delivery every step of a way.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 d-flex">
+                            <div class="feature-card">
+                                <i class="fa-solid fa-leaf feature-icon"></i>
+                                <h3>Eco-Conscious</h3>
+                                <p>We champion sustainable practices, offering eco-friendly options and promoting responsible technology usage.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+<!-- === START: Portfolio CTA Section === -->
+                <section class="page-section portfolio-cta-section">
+                    <div class="cta-section text-center border rounded-3 shadow-sm p-lg-5 p-4" style="background: linear-gradient(135deg, rgba(var(--accent-rgb), 0.05), rgba(var(--primary-rgb), 0.02));">
+                        <i class="fa-solid fa-briefcase fa-3x mb-3 text-primary"></i>
+                        <h3 class="mb-3">See Our Work in Action</h3>
+                        <p class="lead text-secondary mb-4 mx-auto" style="max-width: 650px;">
+                            Explore our portfolio to see examples of the solutions we've crafted and the results we've delivered for clients like you.
+                        </p>
+                        <!-- Using an outline style button for variation -->
+                        <a href="portfolio.html" class="btn btn-lg btn-outline-primary rounded-pill px-4 fw-bold">
+                            View Portfolio <i class="fa-solid fa-arrow-right ms-2 fa-sm"></i>
+                        </a>
+                    </div>
+                </section>
+                <!-- === END: Portfolio CTA Section === -->
+
+                <!-- Standard CTA Section -->
+                <section class="page-section cta-section-wrapper">
+                    <div class="cta-section">
+                        <h3>Ready to Elevate Your Tech?</h3>
+                        <p>Let's discuss how Linfy Tech Solutions can transform your ideas into reality. Get in touch for a personalized consultation.</p>
+                        <a href="contact.html" class="cta-btn">
+                            Start the Conversation
+                        </a>
+                    </div>
+                </section>
+            </div> <!-- End .content-wrapper -->
+        </main>
+
+        <!-- Site Footer (Standard + Social) -->
+        <footer class="site-footer mt-auto">
+            <div class="container">
+                 <div class="social-media mb-4">
+                    <a href="https://www.facebook.com/profile.php?id=100084779703710" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/linfordlee14/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:linfordlee14@gmail.com" aria-label="Email" class="social-icon"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/linfordlee14" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="copyright">
+                    © <span id="current-year"></span> Linfy Tech Solutions. Driven by technology, guided by service. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top Button (Standard) -->
+        <button class="back-to-top" aria-label="Back to Top" title="Back to Top">
+             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+            </svg>
         </button>
-        <section>
-            <h2>Our Mission</h2>
-            <p>At Linfy Tech Solutions, we aim to deliver cutting-edge technology solutions that empower businesses to thrive in the digital age.</p>
-        </section>
-        <section>
-            <h2>Why Choose Us?</h2>
-            <ul>
-                <li>Expert team with years of experience</li>
-                <li>Customized solutions tailored to your needs</li>
-                <li>Commitment to excellence and innovation</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <div class="social-media">
-            <a href="https://www.facebook.com/profile.php?id=100084779703710" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.linkedin.com/in/linfordlee14/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-            <a href="linfordlee14@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
-            <a href="https://github.com/linfordlee14" class="social-icon"><i class="fab fa-github"></i></a>
-        </div>
-        <p>&copy; 2025 Linfy Tech Solutions. All rights reserved.</p>
-    </footer>
-    <button id="back-to-top" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
-    <script>
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    </script>
+    </div> <!-- End .app-container -->
+
+    <!-- Global Scripts -->
+    <script src="script.js" defer></script>
 </body>
 </html>
